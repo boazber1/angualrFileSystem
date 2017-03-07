@@ -1,0 +1,7 @@
+<ul><span ng-click="$ctrl.toggleFolder()"
+        ng-mousedown="$ctrl.handleClick($event)" ng-if="$ctrl.dir.isDirectory">{{$ctrl.dir.name}}</span>
+<li ng-repeat="directory in $ctrl.dir.children" ng-if="$ctrl.isOpen">
+    <folder dir="directory" fs="$ctrl.fs"></folder>
+</li>
+
+</ul>

@@ -1,0 +1,6 @@
+
+<div ng-model="$ctrl.fileSystem.item">
+    <span class="content-dir" ng-repeat="child in $ctrl.fileSystem.item.children"
+          ng-mousedown="$ctrl.handleClick($event)" >{{child.name}}
+    </span>
+</div>

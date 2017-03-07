@@ -1,0 +1,61 @@
+html, body, .ui{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.browser{
+    display: inline-block;
+    color: red;
+    width: 22%;
+    height: 98%;
+    margin-left: 2px;
+    border: 2px solid black;
+}
+
+.content{
+    display: inline-block;
+    color: darkblue;
+    width: 76%;
+    height: 98%;
+    margin-left: 2px;
+    border: 2px solid black;
+    vertical-align: top;
+}
+
+.context-menu{
+    position: absolute;
+    z-index: 9999;
+}
+
+.context-menu-row{
+    background-color: lightgrey;
+    text-align: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.context-menu-row:first-child{
+    border-top: 1px solid black;
+}
+
+.context-menu-row:hover{
+    background-color: aqua;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.content-dir{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    margin: 8px;
+
+}
